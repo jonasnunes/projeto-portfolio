@@ -3,6 +3,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    padding-block: 1rem;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li a{
+    margin-right: 1rem;
+    font-family: var(--fonte-montserrat);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
+
+header ul li a:hover,
+footer p a:hover{
+    border-bottom: 1px solid var(--cor-secundaria);
 }
 
 main.container{
@@ -22,6 +47,7 @@ main.container section.container-1 h1{
     font-family: var(--fonte-krona);
     color: var(--cor-principal);
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 main.container section.container-1 span{
@@ -37,33 +63,63 @@ main.container section.container-1 h1, span, p{
     line-height: 2;
 }
 
-main.container section.container-1 div.botoes{
+main.container section.container-1 div.redes-sociais{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-main.container section.container-1 div.botoes button{
+main.container section.container-1 div.redes-sociais h3{
+    color: var(--cor-principal);
+    font-family: var(--fonte-krona);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+main.container section.container-1 div.redes-sociais button{
     width: 46%;
-    height: 50px;
-    border: none;
+    height: 40px;
+    border: 1px solid var(--cor-secundaria);
     border-radius: 5px;
-    background-color: var(--cor-secundaria);
+    background-color: transparent;
     cursor: pointer;
     transition: .5s;
 }
 
-main.container section.container-1 div.botoes button:hover{
+main.container section.container-1 div.redes-sociais button:hover{
     transform: translateY(-5px);
 }
 
-main.container section.container-1 div.botoes button a{
+main.container section.container-1 div.redes-sociais button a{
     font-family: var(--fonte-montserrat);
-    color: #000;
+    color: var(--cor-principal);
     font-weight: 600;
+}
+
+main.container section.container-1 div.redes-sociais button i{
+    color: var(--cor-secundaria);
+    margin-right: .5rem;
 }
 
 main.container section.container-2 img{
     height: 400px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    padding-block: 1rem;
+}
+
+footer p{
+    color: var(--cor-principal);
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-secundaria);
+}
+
+footer p a{
+    color: var(--cor-secundaria);
 }
