@@ -1,0 +1,69 @@
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main.container section.container-1,
+main.container section.container-2{
+    width: 38%;
+}
+
+main.container section.container-1 h1{
+    font-family: var(--fonte-krona);
+    color: var(--cor-principal);
+    margin-bottom: 1rem;
+}
+
+main.container section.container-1 span{
+    color: var(--cor-secundaria);
+}
+
+main.container section.container-1 p{
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-principal);
+}
+
+main.container section.container-1 h1, span, p{
+    line-height: 2;
+}
+
+main.container section.container-1 div.botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+main.container section.container-1 div.botoes button{
+    width: 46%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
+    transition: .5s;
+}
+
+main.container section.container-1 div.botoes button:hover{
+    transform: translateY(-5px);
+}
+
+main.container section.container-1 div.botoes button a{
+    font-family: var(--fonte-montserrat);
+    color: #000;
+    font-weight: 600;
+}
+
+main.container section.container-2 img{
+    height: 400px;
+}
