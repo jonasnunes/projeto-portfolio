@@ -1,0 +1,20 @@
+:root{
+
+    --fonte-krona: 'Krona One', sans-serif;
+    --fonte-montserrat: 'Montserrat', sans-serif;
+
+    --cor-principal: #F6F6F6;
+    --cor-secundaria: #22D4FD;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    min-height: 100vh;
+}
