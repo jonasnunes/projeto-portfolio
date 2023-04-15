@@ -1,8 +1,5 @@
 body{
     background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 header{
@@ -34,6 +31,7 @@ main.container{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 main.container section.container-1,
@@ -172,6 +170,12 @@ footer p a{
         width: 48%;
     }
 
+    main.container section.container-1 div.redes-sociais{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main.container section.container-1 div.redes-sociais h3,
     main.container section.container-2{
         display: none;
     }
