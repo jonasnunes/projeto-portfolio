@@ -3,14 +3,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 header{
-    position: absolute;
-    top: 0;
-    left: 15%;
+    display: block;
     padding-block: 1rem;
+    margin-left: 7%;
 }
 
 header ul{
@@ -109,8 +107,7 @@ main.container section.container-2 img{
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
+    text-align: center;
     padding-block: 1rem;
 }
 
@@ -128,10 +125,15 @@ footer p a{
 
 @media(max-width: 480px){
 
+    body{
+        display: block;
+    }
+
     main.container{
         display: flex;
         align-items: flex-start;
-        padding-top: 5rem;
+        padding-top: 2rem;
+        margin: 0 auto;
     }
 
     main.container,
